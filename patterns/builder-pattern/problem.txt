@@ -1,0 +1,15 @@
+Exercise 1: EmailBuilder
+Design EmailBuilder
+easy
+Problem: Implement a Builder for an Email class. An email requires a recipient (to) and subject, but everything else is optional.
+
+Requirements:
+
+to(String) - required (pass in Builder constructor)
+subject(String) - required (pass in Builder constructor)
+cc(String) - optional, can be called multiple times to add multiple CC recipients
+bcc(String) - optional, can be called multiple times
+body(String) - optional
+priority(String) - optional, defaults to "normal"
+attachment(String) - optional, can be called multiple times
+toString() should display all set fields
