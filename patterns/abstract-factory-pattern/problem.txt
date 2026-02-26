@@ -1,0 +1,35 @@
+Exercise 1: Theme Factory
+Design Theme Factory
+easy
+Problem: Build a theming system for a UI framework. 
+Each theme (Light and Dark) produces two related products: a ThemeColor and a ThemeFont. The abstract factory ensures that colors and fonts from the same theme are always used together.
+
+Requirements:
+
+ThemeColor interface with a apply() method
+ThemeFont interface with a render() method
+LightColor prints "Applying light color: #FFFFFF background, #000000 text"
+DarkColor prints "Applying dark color: #1E1E1E background, #FFFFFF text"
+LightFont prints "Rendering light theme font: Arial, 14px"
+DarkFont prints "Rendering dark theme font: Consolas, 14px"
+ThemeFactory with createColor() and createFont() methods
+
+
+
+
+
+EXERCISE-2 Cloud Infrastructure Provisioner (Abstract Factory)
+
+Design a multi-cloud system supporting AWS, GCP, and Azure.
+Requirements:
+- Each cloud has: VirtualMachine, Storage, Database, LoadBalancer
+- AWS   → EC2, S3, RDS, ALB
+- GCP   → ComputeEngine, CloudStorage, CloudSQL, CloudLB
+- Azure → AzureVM, BlobStorage, AzureSQL, AzureLB
+- InfraService should provision without knowing the cloud
+
+Expected:
+- 4 abstract product interfaces
+- 3 concrete families (12 classes total)
+- AbstractFactory + 3 concrete factories
+- InfraService as client

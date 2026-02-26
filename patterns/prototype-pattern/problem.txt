@@ -1,0 +1,11 @@
+Exercise 1: Shape Cloning
+Implement Shape Cloning
+easy
+Problem: Implement a Shape prototype system with Circle and Rectangle classes. Each shape has a color and dimensions. Clone a circle and a rectangle, modify the clones, and verify the originals are unaffected.
+
+Requirements:
+
+Circle has color, radius
+Rectangle has color, width, height
+Both implement a Cloneable interface with a clone() method
+After cloning, modifying the clone must not affect the original
