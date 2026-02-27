@@ -1,0 +1,11 @@
+Exercise 1: Weather Station
+Design Weather Station
+easy
+Build a basic weather station system. A WeatherStation subject broadcasts temperature, humidity, and pressure readings. Two observers respond to each update: CurrentConditionsDisplay shows the latest reading, and StatisticsDisplay tracks and displays the average temperature across all readings received so far.
+
+Requirements:
+
+Subject interface with register, remove, notify
+WeatherStation with setMeasurements(temp, humidity, pressure) that notifies observers
+CurrentConditionsDisplay prints the latest temperature, humidity, and pressure
+StatisticsDisplay tracks all temperature readings and prints the average temperature
