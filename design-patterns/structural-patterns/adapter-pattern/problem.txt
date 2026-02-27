@@ -1,0 +1,11 @@
+Exercise 1: Temperature Converter Adapter
+Design Temperature Converter Adapter
+easy
+Problem: You have a Thermometer interface that returns temperature in Celsius. A third-party weather sensor library provides readings in Fahrenheit through a different interface. Write an adapter so your application can use the Fahrenheit sensor as if it were a Celsius thermometer.
+
+Requirements:
+
+Target interface: Thermometer with getTemperature() returning Celsius (double)
+Adaptee: FahrenheitSensor with readFahrenheit() returning Fahrenheit (double)
+Adapter: converts Fahrenheit to Celsius using (F - 32) * 5/9
+
