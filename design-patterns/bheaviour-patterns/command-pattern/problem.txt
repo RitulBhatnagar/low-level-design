@@ -1,0 +1,11 @@
+Exercise 1: Restaurant Order System
+Design Restaurant Order System
+easy
+Build a restaurant order system where a waiter (invoker) takes orders and can cancel them. A Kitchen receiver prepares and cancels dishes. PlaceOrderCommand tells the kitchen to prepare a dish, and CancelOrderCommand tells it to cancel. Both commands support undo.
+
+Requirements:
+
+Kitchen receiver with prepareDish(dish) and cancelDish(dish) methods
+PlaceOrderCommand that calls prepareDish on execute and cancelDish on undo
+CancelOrderCommand that calls cancelDish on execute and prepareDish on undo
+Waiter invoker with takeOrder(command), submitOrders() (executes all queued commands), and undoLast()
