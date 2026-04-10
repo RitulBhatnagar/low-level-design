@@ -204,7 +204,7 @@ class Job implements Searchable {
     postedAt: Date;
 
     constructor(job: JobInterface) {
-        this.id = ++Job.counter;  // fix: was comma (,) instead of semicolon (;)
+        this.id = ++Job.counter;  
         this.company = job.company;
         this.description = job.description;
         this.title = job.title;
